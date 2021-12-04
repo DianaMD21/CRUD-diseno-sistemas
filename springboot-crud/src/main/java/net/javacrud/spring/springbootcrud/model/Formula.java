@@ -3,11 +3,25 @@ package net.javacrud.spring.springbootcrud.model;
 import java.util.List;
 
 public class Formula {
+	
+	
 	private String idProduct;
 	private String idFormula;
 	private String name;
 	private Boolean isActive;
 	private List<Product> myPoducts;
+	
+	public Formula(String idProduct, String idFormula, String name, Boolean isActive, List<Product> myPoducts) {
+		super();
+		this.idProduct = idProduct;
+		this.idFormula = idFormula;
+		this.name = name;
+		this.isActive = isActive;
+		this.myPoducts = myPoducts;
+	}
+	public Formula() {
+		super();
+	}
 	
 	public String getIdProduct() {
 		return idProduct;
